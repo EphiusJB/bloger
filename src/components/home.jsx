@@ -17,7 +17,7 @@ export default function Home({auth, user, posts}) {
                 </div>
                 <div className="content">
                         {posts.map((post) => (
-                            <Post post={post} />
+                            <Post key={post.id} post={post} />
                         ))}
                 </div>
             </div>
