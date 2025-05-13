@@ -1,0 +1,103 @@
+/**
+
+styles for the auth components will come here
+*/
+
+/**
+
+styles for the home page will come here
+*/
+.home {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 51vw;
+}
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 20px;
+  width: 50%;
+}
+.topMenu .opt {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    margin-bottom: 10px;
+    align-items: center;
+    overflow-y: scroll;
+    border-top: solid 1px #ccc; 
+    scrollbar-width: thin;              /* For Firefox */
+    scrollbar-color: transparent transparent;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+}
+.post-item{
+    padding: 0.5rem;
+}
+.post-item .post-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.bottomPanel{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.rightSide{
+    display: flex;
+    gap: 20px;
+}
+hr{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+/**
+
+styels for the navbar will come here
+*/
+.navbar {
+    width: 20vw;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+.topBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
