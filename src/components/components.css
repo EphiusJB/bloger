@@ -10,17 +10,18 @@ styles for the home page will come here
 .home {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 85vh;
   background-color: #f0f0f0;
 }
 .home-content{
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    width: 51vw;
+    width: 81vw;
 }
 .topMenu {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: left;
   padding: 20px;
@@ -39,7 +40,8 @@ styles for the home page will come here
     margin-bottom: 10px;
     align-items: center;
     overflow-y: scroll;
-    border-top: solid 1px #ccc; 
+    border: solid 1px #ccc; 
+    border-bottom: transparent;
     scrollbar-width: thin;              /* For Firefox */
     scrollbar-color: transparent transparent;
 }
@@ -75,22 +77,19 @@ hr{
 styels for the navbar will come here
 */
 .navbar {
-    width: 20vw;
-  background-color: #333;
-  color: white;
+  color: #333;
+  background-color: #f0f0f0;
   padding: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .navbar a {
-  color: white;
+  color: #333;
   text-decoration: none;
   padding: 10px;
 }
 .nav-links ul {
   display: flex;
-  flex-direction: column;
   gap: 10px;
   list-style-type: none;
 }

@@ -7,24 +7,21 @@ export default function Home({auth, user, posts}) {
 
     return (
         <>
-        <div className="home">
            <Nav auth={auth} user={user}/>
-            <div className="home-content">
+        <div className="home">
+            <div className="home-sidebar">
                 <div className="topMenu">
                     <div className="opt">Everything</div>
                     <div className="opt">Trending</div>
                     <div className="opt">Following</div>
                 </div>
+            </div>
+            <div className="home-content">
                 <div className="content">
                         {posts.map((post) => (
                             <Post key={post.id} post={post} />
                         ))}
                 </div>
-            </div>
-            <div className="home-sidebar">
-                <h2>Sidebar</h2>
-                <p>This is the sidebar content.</p>
-                <p>You can add links, ads, or any other content here.</p>
             </div>
         </div>
         </>

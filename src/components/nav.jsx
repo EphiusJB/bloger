@@ -20,6 +20,7 @@ export default function Nav({auth, user}) {
             <nav className="navbar">
                 <div className="topBox">
                     <h1 className='logo'>Blogger</h1>
+                </div>
                 <div className="nav-links">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -29,10 +30,6 @@ export default function Nav({auth, user}) {
                         <li><button onClick={()=> setShowModal(true)}>New Post</button></li>
                     </ul>
                     <AddPost isOpen={showModal} onclose={()=> setShowModal(false)} auth={auth}/>
-                </div>
-                </div>
-                <div className="profile">
-                    {user.displayName}
                 </div>
                 <div className="auth">
                     <button className="logout" onClick={handleLogout}>Logout</button>
